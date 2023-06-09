@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">
+           <b> Your name</b>
+        </label>
+        <input id="name" placeholder="Input your text" type="text" maxlength="25">
+        <br>
+        <br>
+        <label for="pass">
+           <b> Your password</b>
+        </label>
+        <input id="pass"  placeholder="Input your text" type="password"
+        pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title = 
+        "Invalid input format 
+        password cannot be less than 8 characters">
+        </label>
+        <br> 
+        <p>
+            <b> Email:</b> <input type="email" name="email" required placeholder="">
+        </p>
+        <br>
+      <input type = "submit" value = "Enter"> 
+        <br>
+        <br>
+        <fieldset>
+            <legend>
+               <b> User data</b>
+            </legend>
+            <div>
+                <label for="age">
+                   <b> Your age</b>
+                </label>
+                <input id="age" type="number">
+            </div>
+            <br>
+            <div>
+                <label for="data">
+                   <b> Order data</b>
+                </label>
+                <input id="data" type="date">
+            </div>
+        </fieldset>
+        <!-- <select name="select" id="select"> -->
+            <!-- <option value="1">Html</option> -->
+            <!-- <option value="2">Css</option> -->
+            <!-- <option value="3">Js</option> -->
+        <!-- </select> -->
+        <br>
+        <textarea name="" id="" cols="30" rows="2"></textarea>
+        <p>
+            <label for="name">
+               <b> What type of vechicle you are looking for?</b>
+            </label>
+            <br>
+            
+            <label for="bicycle">
+                Bicycle
+            </label>
+            <input value="bicycle" name="transport" id="bicycle" type="radio">
+        </p>
+        <p>
+            <label for="Car">
+                Car
+            </label>
+            <input value="Car" id="Car" name="transport" type="radio">
+        </p>
+        <p>
+           <b> Select brand</b>
+            <br>
+            
+            Mazda
+            <input name="vechicle" value="car1" type="checkbox">
+        </p>
+        <p>
+            Volvo
+            <input name="vechicle2" value="car2" type="checkbox">
+        </p>
+        <p>
+            Reno
+            <input name="vechicle3" value="car3" type="checkbox">
+        </p>
+        <p>
+            <label for="color">
+              <b>  Preferred color of car</b>
+            </label>
+            <br>
+            
+            <p><input list="color"></p>
+            <datalist id="color">
+                <option>black</option>
+                <option>white</option>
+                <option>red</option>
+                <option>blue</option>
+            </datalist>
+        </p>
+        <button type="reset">
+            Reset form
+        </button>
+        <button type="submit">
+           Sumbmit
+        </button>
+    </form>
+    <a href="#">Link</a> <button>Add to cart</button>
+
+</body>
+</html>
